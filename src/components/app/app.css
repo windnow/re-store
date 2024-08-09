@@ -1,7 +1,7 @@
 .app {
-    border-width: 3px;
-    border-color: red;
-    border-style: dashed;
+    border-width: 11px;
+    border-color: tomato;
+    border-style: dotted;
     padding: 10px;
     color: gray;
 }

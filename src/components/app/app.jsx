@@ -1,12 +1,17 @@
 import './app.css';
 
-import ErrorIndicator from '../error-indicator';
 import Spinner from '../spinner';
+import SimpleCtx from '../pages/simple/simpleHoc';
+import SimpleHOC from '../pages/simple/simpleCtx';
+import SimpleHook from '../pages/simple/simpleHook';
 
 const App = () => {
     return (
         <div className="app">
             <Spinner />
+            <SimpleCtx />
+            <SimpleHOC />
+            <SimpleHook />
         </div>
     )
 };
