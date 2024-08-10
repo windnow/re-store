@@ -4,7 +4,7 @@ const SimpleHOC = (props) => {
 
     const { bookstoreService:{getBooks:b} } = props;
 
-    const list = b().map( (v) => <li>{v}</li>)
+    const list = b().map( (v) => <li key={v.id}>{v.name}</li>)
 
 
 

@@ -7,7 +7,7 @@ const SimpleCtx = () => {
     const bookstoreService = useContext(BookstoreServiceContext);
     const { getBooks:b } = bookstoreService;
 
-    const list = b().map( (v) => <li>{v}</li>);
+    const list = b().map( (v) => <li key={v.id}>{v.name}</li>);
 
     return (
         <div className="ctx">
