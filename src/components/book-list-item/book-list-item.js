@@ -2,10 +2,10 @@ import React from "react";
 import './book-list-item.css';
 
 const BookListItem = ({book}) => {
-    const {name, author } = book;
+    const {title, author } = book;
     return (
         <React.Fragment>
-            <span>{name}</span>
+            <span>{title}</span>
             <span>{author}</span>
         </React.Fragment>
     )
