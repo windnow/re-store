@@ -1,5 +1,6 @@
 import React from "react";
 import BookListItem from "../book-list-item";
+import { connect } from "react-redux"
 
 import './book-list.css';
 
@@ -14,4 +15,10 @@ const BookList = ({books}) => {
         </ul>
     )
 }
-export default BookList;
+
+const mapStateToProps = ({books}) => {
+  return {books};
+}
+
+export default connect(mapStateToProps)(BookList);
+
