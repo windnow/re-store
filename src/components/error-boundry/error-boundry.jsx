@@ -19,7 +19,7 @@ export default class ErrorBoundry extends React.Component {
     render() {
         if(this.state.hasError){
             const { error, errorInfo } = this.state;
-            return <ErrorIndicator error={error} errorInfo={errorInfo} />
+            return <ErrorIndicator error={error} errorInfo={errorInfo.componentStack} />
         }
         return this.props.children;
     }

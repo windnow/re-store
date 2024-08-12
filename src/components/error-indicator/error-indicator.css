@@ -1,6 +1,25 @@
 .error-indicator {
     padding: 10px;
-    border-color: red;
-    border-style: dashed;
-    border-width: 3px;
 }
+
+details {
+  white-space: 'pre-wrap';
+  padding: '6px';
+  transition: max-height 400ms ease-out;
+}
+
+details > summary {
+    padding: 4px;
+    width: 200px;
+    background-color: #ffae88ea;
+    border: none;
+    box-shadow: 2px 2px 4px #ff8c56ea;
+    cursor: pointer;
+  }
+
+  details > pre {
+    background-color: #ffae88ea;
+    padding: 4px;
+    margin: 0;
+    box-shadow: 2px 2px 4px #ff8c56ea;
+  }

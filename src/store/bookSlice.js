@@ -1,11 +1,5 @@
-import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-
-// Асинхронный метод для получения списка книг с сервера
-export const fetchBooks = createAsyncThunk('books/fetchBooks', async () => {
-    const response = await fetch('/api/books'); // замените на ваш URL
-    const books = await response.json();
-    return books;
-});
+import { createSlice } from '@reduxjs/toolkit';
+import { fetchBooks } from './reducers';
 
 const booksSlice = createSlice({
     name: 'books',
