@@ -32,7 +32,7 @@ const BookList = () => {
         return <li key={id}><BookListItem book={bookInfo}/></li>
     });
     return (
-        <ul>
+        <ul className="book-list">
             {bookList}
         </ul>
     )
